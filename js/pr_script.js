@@ -8,6 +8,7 @@
     MAEHARA.COMMON = {
         init: function () {
             page_id = $('main').attr('id');
+            console.log(page_id);
         }
     }
     MAEHARA.PRESENT = {
