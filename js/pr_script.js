@@ -17,11 +17,11 @@
             $('body').addClass('pr_mae-present-page');
             /*slider001*/
             $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
-                auto: true,
-                infiniteLoop: true,
+                auto: false,
+                infiniteLoop: false,
                 pager:false,
                 pause: 5000,
-                speed: 1500,
+                speed: 500,
                 slideWidth: 200,
                 slideMargin: 20,
                 controls: false,
@@ -30,10 +30,14 @@
                 responsive: true,
             });
             $('.slick-test').slick({
-                infinite: true,
+                autoplay: false,
+                speed: 1000,
+                variableWidth: true,
+                centerMode: false,
+                centerPadding: "0",
+                infinite: false,
                 dots:true,
                 arrows: false,
-                autoplay: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplaySpeed: 3000,
@@ -45,10 +49,10 @@
             });
         },
         slide: function () {
-            $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
-                pager:false,
-                slideWidth: slide_resize,
-            });
+            // $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
+            //     pager:false,
+            //     slideWidth: slide_resize,
+            // });
         }
     }
     MAEHARA.BEGINER = {
