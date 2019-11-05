@@ -27,6 +27,7 @@
 /***pc-sp common***/
 .pr_mae-main {
 	display: block;
+	margin-bottom: 80px;
 	padding: 0 20px;
 }
 .pr_mae-main * {
@@ -36,6 +37,17 @@
 .pr_mae-main img {
 	display: block;
 	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.pr_mae-main {
+		min-width: 1140px;
+		margin: 0 auto;
+		margin-bottom: 78px;
+		padding: 0 70px;
+	}
+}
+@media screen and (min-width: 767px) {
+	
 }
 /**fv sect**/
 .pr_mae-pre-fv-sect {
@@ -435,7 +447,7 @@ a.pr_mae-pre-sc-more:hover {
 	right: 0;
 	width: 8px;
 	height: 16px;
-	background: url(../img/maehara/present/icon_link-arrow-right.svg) no-repeat;
+	background: url(https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/common/icon_link-arrow-right.svg) no-repeat;
 	background-size: 100% auto;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -465,11 +477,6 @@ a.pr_mae-pre-sc-more:hover {
 }
 
 @media screen and (min-width: 768px) {
-	.pr_mae-main {
-		min-width: 1140px;
-		margin: 0 auto;
-		padding: 0 70px;
-	}
 	.pr_mae-pre-fv-ttl-box {
 		margin-bottom: 33px;
 	}
@@ -891,7 +898,7 @@ a.pr_mae-pre-sc-more:hover {
 	width: 20px;
 	height: 20px;
 	display: block;
-	background: url(../img/maehara/about/icon_target-blank.png) no-repeat;
+	background: url(https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/about/icon_target-blank.png) no-repeat;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	  transform: translateY(-50%);
@@ -1050,16 +1057,17 @@ a.pr_mae-pre-sc-more:hover {
 }
 .pr_mae-beg-arrow-left {
 	left: -10px;
-	background: url(../img/maehara/beginer/icon_slider-arrow-left.svg) no-repeat;
+	background: url(https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/icon_slider-arrow-left.svg) no-repeat;
 	background-size: 100% auto;
 }
 .pr_mae-beg-arrow-right {
 	right: -10px;
-	background: url(../img/maehara/beginer/icon_slider-arrow-right.svg) no-repeat;
+	background: url(https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/icon_slider-arrow-right.svg) no-repeat;
 	background-size: 100% auto;
 }
 /*pager*/
 .pr_mae-beg-slide-box .bx-wrapper .bx-pager {
+	display: block !important;
 	bottom: -32px !important;
 }
 .pr_mae-beg-slide-box .bx-pager.bx-default-pager .bx-pager-item:last-child {
@@ -1106,14 +1114,14 @@ a.pr_mae-pre-sc-more:hover {
 	right: 10px;
 	width: 11px;
 	height: 21px;
-	background: url(../img/maehara/common/icon_link-arrow-right.svg) no-repeat;
+	background: url(https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/common/icon_link-arrow-right.svg) no-repeat;
 	background-size: 100% auto;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	    transform: translateY(-50%);
 }
 .pr_mae-beg-square-link:hover::before {
-	background: url(../img/maehara/beginer/icon_link-hover-arrow-right.svg) no-repeat;
+	background: url(https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/common/icon_link-hover-arrow-right.svg) no-repeat;
 	background-size: 100% auto;
 }
 .pr_mae-beg-square-link strong {
