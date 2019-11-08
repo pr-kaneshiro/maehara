@@ -40,6 +40,7 @@ jQuery(function ($) {
                 $('body,html').stop().animate({
                   scrollTop: position
                 }, animeSpeed);
+                return false;
               }
             });
         }
