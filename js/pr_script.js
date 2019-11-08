@@ -22,29 +22,29 @@ jQuery(function ($) {
             var urlHash = location.hash; //URLハッシュを取得
             var animeSpeed = 500; //スクロールのアニメーションスピード
             if (urlHash) {
-              $('body,html').stop().scrollTop(0);
-              setTimeout(function () {
-                var target = $(urlHash);
-                var position = target.offset().top - headerHeight; //ヘッダー固定の場合：headerHeight、そうでない場合：0
-                $('body,html').stop().animate({
-                  scrollTop: position
-                }, animeSpeed);
-              }, 100);
+                $('body,html').stop().scrollTop(0);
+                setTimeout(function () {
+                    var target = $(urlHash);
+                    var position = target.offset().top - headerHeight; //ヘッダー固定の場合：headerHeight、そうでない場合：0
+                    $('body,html').stop().animate({
+                        scrollTop: position
+                    }, animeSpeed);
+                }, 100);
             }
             $('a[href^="#"]').on({
-              'click': function () {
-                console.log('OK!!!!!');
-                var href = $(this).attr("href");
-                var target = $(href);
-                var position = target.offset().top - headerHeight; //ヘッダー固定の場合：headerHeight、そうでない場合：0
-                $('body,html').stop().animate({
-                  scrollTop: position
-                }, animeSpeed);
-                return false;
-              }
+                'click': function () {
+                    console.log('OK!!!!!');
+                    var href = $(this).attr("href");
+                    var target = $(href);
+                    var position = target.offset().top - headerHeight; //ヘッダー固定の場合：headerHeight、そうでない場合：0
+                    $('body,html').stop().animate({
+                        scrollTop: position
+                    }, animeSpeed);
+                    return false;
+                }
             });
         }
-    }   
+    }
     MAEHARA.PRESENT = {
         init: function () {
             //body Class add
@@ -53,7 +53,7 @@ jQuery(function ($) {
             $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
                 auto: false,
                 infiniteLoop: false,
-                pager:false,
+                pager: false,
                 pause: 5000,
                 speed: 500,
                 slideWidth: 200,
@@ -93,12 +93,12 @@ jQuery(function ($) {
         init: function () {
             $('body').addClass('pr_mae-beginer-page');
             /*SP*/
-            if(window.matchMedia('screen and (max-width: 768px)').matches) {
+            if (window.matchMedia('screen and (max-width: 768px)').matches) {
                 console.log('SP!!!');
                 $('.pr_mae-beg-base-slide001').bxSlider({
                     auto: true,
                     infiniteLoop: true,
-                    pager:true,
+                    pager: true,
                     pause: 5000,
                     speed: 1500,
                     controls: true,
@@ -117,7 +117,7 @@ jQuery(function ($) {
                 $('.pr_mae-beg-base-slide001').bxSlider({
                     auto: true,
                     infiniteLoop: true,
-                    pager:true,
+                    pager: true,
                     pause: 5000,
                     speed: 1500,
                     controls: true,
@@ -132,7 +132,7 @@ jQuery(function ($) {
                     prevSelector: '.pr_mae-beg-arrow-left',
                     nextSelector: '.pr_mae-beg-arrow-right',
                     responsive: true,
-                }); 
+                });
             }
         },
         slide: function () {
