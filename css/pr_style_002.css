@@ -254,6 +254,7 @@
 	font-size: 13px;
 	font-weight: normal;
 	text-align: center;
+	vertical-align: middle;
 }
 .pr_mae-athand-comparison-table th {
 	background-color: #F8F8F6;
@@ -263,7 +264,7 @@
 	width: 140px;
 }
 .pr_mae-athand-comparison-table .pr_mae-double {
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 /* .pr_mae-athand-comparison-note */
@@ -275,6 +276,9 @@
 .pr_mae-athand-comparison-note li {
 	font-weight: bold;
 	line-height: 1.7;
+}
+.pr_mae-athand-comparison-note li + li {
+	margin-top: 5px;
 }
 .pr_mae-athand-comparison-note-mark {
 	display: inline-block;
@@ -475,7 +479,7 @@
 		width: 105px;
 	}
 	.pr_mae-athand-comparison-table .pr_mae-double {
-		font-size: 16px;
+		/* font-size: 16px; */
 	}
 
 	/* .pr_mae-athand-comparison-note */
