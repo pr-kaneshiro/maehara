@@ -56,7 +56,7 @@
 	font-size: 30px;
 }
 .pr_mae-athand-book-lead {
-	margin: 0 0 30px 0;
+	margin: 0 0 50px 0;
 	font-size: 14px;
 	text-align: center;
 	line-height: 2.14;
@@ -67,19 +67,9 @@
 	margin-top: 20px;
 }
 .pr_mae-athand-book-listTtl {
-	display: flex;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	justify-content: space-between;
-	-ms-flex-pack: space-between;
-	-webkit-box-pack: space-between;
-	-webkit-justify-content: space-between;
-	align-items: center;
-	-ms-flex-align: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
+	width: 100%;
 	height: 112px;
-    padding: 0 100px 0 140px;
+    padding: 0 100px 0 145px;
 	background-color: #FAF8F5;
 	border: solid 1px #CCCCCC;
 	border-radius: 6px;
@@ -93,6 +83,21 @@
 	top: 0;
 	left: 0;
 }
+.pr_mae-athand-book-listTtl-box {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-ms-flex-pack: space-between;
+	-webkit-box-pack: space-between;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	width: 100%;
+	height: 100%;
+}
 .pr_mae-athand-book-listTtl-name {
 	font-size: 20px;
 	font-weight: bold;
@@ -101,7 +106,7 @@
 	display: block;
 	position: absolute;
 	top: 0;
-	right: 50px;
+	right: 45px;
 	bottom: 0;
 	width: 20px;
 	height: 2px;
@@ -246,6 +251,7 @@
 	height: 34px;
     padding: 0 20px;
 	border: solid 1px #ccc;
+	font-size: 13px;
 	font-weight: normal;
 	text-align: center;
 }
@@ -273,5 +279,229 @@
 .pr_mae-athand-comparison-note-mark {
 	display: inline-block;
 	color: #CC8585;
-	font-size: 18px;
+	font-size: 16px;
+    margin: 0 4px 0 0;
+}
+
+
+/* sp */
+@media screen and (max-width: 767px) {
+	/* pr_mae-athand-area
+	――――――――――――――――――――――――――――――――――――――――――――――*/
+	.pr_mae-athand-area {
+		margin: 48px auto 80px;
+	}
+	.pr_mae-athand-book-area {
+		margin: 0 0 54px 0;
+	}
+	.pr_mae-athand-book-ttl {
+		margin: 0 0 14px 0;
+		text-align: left;
+		font-size: 22px;
+	}
+	.pr_mae-athand-book-lead {
+		margin: 0 0 22px 0;
+		font-size: 14px;
+		text-align: left;
+		line-height: 2.14;
+	}
+
+	/* pr_mae-athand-book-list */
+	.pr_mae-athand-book-list > li + li {
+		margin-top: 20px;
+	}
+	.pr_mae-athand-book-listTtl {
+		height: 90px;
+		padding: 0 40px 0 80px;
+		border-radius: 6px;
+		position: relative;
+
+	}
+	.pr_mae-athand-book-listTtl:hover {
+		cursor: pointer;
+	}
+	.pr_mae-athand-book-listTtl-box {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-align: flex-start;
+		-webkit-box-align: flex-start;
+		-webkit-align-items: flex-start;
+	}
+	.pr_mae-athand-book-listTtl-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		width: 65px;
+	}
+	.pr_mae-athand-book-listTtl-name {
+		margin: 0 0 8px 0;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.pr_mae-athand-book-listTtl-btn {
+		top: 0;
+		right: 20px;
+		bottom: 0;
+		width: 15px;
+		height: 2px;
+	}
+	.pr_mae-athand-book-listTtl-btn:before {
+		width: 15px;
+		height: 2px;
+	}
+	.pr_mae-athand-book-listTtl.pr_js-active .pr_mae-athand-book-listTtl-btn:before {
+		display: none;
+	}
+	.pr_mae-athand-book-listTtl-tag-man {
+		padding: 1px 7px;
+		font-size: 11px;
+	}
+	.pr_mae-athand-book-listTtl-tag-woman {
+		margin: 0 0 0 1px;
+		padding: 1px 7px;
+		font-size: 11px;
+	}
+
+	/* pr_mae-athand-book-listCont */
+	.pr_mae-athand-book-listCont {
+		display: none;
+		padding: 35px 0 30px 0;
+	}
+	.pr_mae-athand-book-listCont-lead {
+
+	}
+	.pr_mae-athand-book-detailList {
+		display: block;
+	}
+	.pr_mae-athand-book-detailList li {
+		width: auto;
+	}
+	.pr_mae-athand-book-detailList li + li {
+		margin-top: 46px;
+		margin-left: 0;
+	}
+	.pr_mae-athand-book-detailList-img {
+
+	}
+	.pr_mae-athand-book-detailList-ttl {
+
+	}
+	.pr_mae-athand-book-detailList-txt {
+	}
+	.pr_mae-athand-book-line {
+
+	}
+
+	/* pr_mae-athand-book-forArea  */
+	.pr_mae-athand-book-forArea + .pr_mae-athand-book-forArea {
+		margin-top: 50px;
+	}
+	.pr_mae-athand-book-forArea-ttl {
+		margin: 0 0 15px 0;
+		text-align: center;
+		font-size: 16px;
+	}
+	.pr_mae-athand-book-forList {
+		display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		justify-content: flex-start;
+		-ms-flex-pack: flex-start;
+		-webkit-box-pack: flex-start;
+		-webkit-justify-content: flex-start;
+	}
+	.pr_mae-athand-book-forList li {
+		width: 48%;
+	}
+	.pr_mae-athand-book-forList li + li {
+		margin-left: 0;
+	}
+	.pr_mae-athand-book-forList li:nth-child(2n) {
+		margin-left: 4%;
+	}
+	.pr_mae-athand-book-forList li:nth-child(n+3) {
+		margin-top: 30px;
+	}
+	.pr_mae-athand-book-forList-img {
+		margin: 0 0 5px 0;
+	}
+	.pr_mae-athand-book-forList-ttl {
+		margin: 0 0 5px 0;
+		font-size: 14px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.pr_mae-athand-book-forList-tag-man,
+	.pr_mae-athand-book-forList-tag-woman {
+		display: block;
+		margin: 0;
+		padding: 0 10px;
+		background-color: #6D85B3;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+	}
+	.pr_mae-athand-book-forList-tag-woman {
+		background-color: #B36D77;
+	}
+
+
+	/* pr_mae-athand-comparison-table */
+	.pr_mae-athand-comparison-table-cap {
+		margin: 0 0 14px 0;
+	}
+	.pr_mae-athand-comparison-table {
+		table-layout:fixed;
+	}
+	.pr_mae-athand-comparison-table th,
+	.pr_mae-athand-comparison-table td {
+		padding: 2px 12px;
+		font-size: 11px;
+	}
+	.pr_mae-athand-comparison-table th {
+		background-color: #F8F8F6;
+	}
+	.pr_mae-athand-comparison-table th:first-child {
+		text-align: left;
+		width: 105px;
+	}
+	.pr_mae-athand-comparison-table .pr_mae-double {
+		font-size: 16px;
+	}
+
+	/* .pr_mae-athand-comparison-note */
+	.pr_mae-athand-comparison-note {
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+	}
+	.pr_mae-athand-comparison-note li {
+		display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		font-weight: bold;
+		line-height: 1.7;
+	}
+	.pr_mae-athand-comparison-note li + li {
+		margin-top: 10px;
+	}
+	.pr_mae-athand-comparison-note-mark {
+		display: block;
+		margin: -2px 4px 0 0;
+		font-size: 17px;
+	}
+	.pr_mae-athand-comparison-note-txt {
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+	}
 }
