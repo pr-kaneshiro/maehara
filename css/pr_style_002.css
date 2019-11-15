@@ -185,7 +185,8 @@
 	width: 100%;
 	height: 1px;
 	margin: 40px 0;
-	border-top: 1px dashed #858382;
+    background: linear-gradient(to right, rgba(77, 77, 77, 1), rgba(77, 77, 77, 1) 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%) 0% 0%;
+    background-size: 3px 1px;
 }
 
 /* pr_mae-athand-book-forArea  */
@@ -278,7 +279,7 @@
 	line-height: 1.7;
 }
 .pr_mae-athand-comparison-note li + li {
-	margin-top: 5px;
+	margin-top: 3px;
 }
 .pr_mae-athand-comparison-note-mark {
 	display: inline-block;
@@ -286,7 +287,9 @@
 	font-size: 16px;
     margin: 0 4px 0 0;
 }
-
+.pr_mae-athand-comparison-note-txt {
+	font-size: 13px;
+}
 
 /* sp */
 @media screen and (max-width: 767px) {
@@ -477,6 +480,10 @@
 	.pr_mae-athand-comparison-table th:first-child {
 		text-align: left;
 		width: 105px;
+	}
+	.pr_mae-athand-comparison-table .pr_mae-athand-comparison-cell {
+		padding-right: 9px;
+		padding-left: 9px;
 	}
 	.pr_mae-athand-comparison-table .pr_mae-double {
 		/* font-size: 16px; */
