@@ -23,6 +23,25 @@
         display: none !important;
     }
 }
+
+/***all slider settings***/
+
+/****present page****/
+.pr_mae-pre-sc-base-slide-box li {
+	display: none;
+}
+.bx-viewport .pr_mae-pre-sc-base-slide-box li {
+	display: block !important;
+}
+/****beginner page****/
+.pr_mae-beg-base-slide001 li {
+	display: none;
+}
+.bx-viewport .pr_mae-beg-base-slide001 li {
+	display: block !important;
+}
+
+
 /****present page start****/
 /***pc-sp common***/
 .pr_mae-main {

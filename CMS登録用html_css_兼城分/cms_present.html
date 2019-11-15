@@ -8,7 +8,217 @@
 <link rel="stylesheet" type="text/css" href="/js/jqueryplugin/makeshop_bxslider/4.1.1/jquery.bxslider.css">
 <!-- slider end-->
 <link rel="stylesheet" href="https://gigaplus.makeshop.jp/maeharakouei/proto_add/css/pr_style.css">
-<script src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/js/pr_script.js"></script>
+<!-- <script src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/js/pr_script.js"></script> -->
+
+<style>
+	/***all slider settings init***/
+
+/****present page****/
+.pr_mae-pre-sc-bsbox-slider li {
+	display: none;
+}
+.bx-viewport .pr_mae-pre-sc-bsbox-slider li {
+	display: block !important;
+}
+/****beginner page****/
+.pr_mae-beg-base-slide001 li {
+	display: none;
+}
+.bx-viewport .pr_mae-beg-base-slide001 li {
+	display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+	.pr_mae-pre-sc-base-slide-box li {
+    display: block;
+	}
+	.pr_mae-pre-sc-bsbox-slider li {
+		display: block;
+	}
+  .pr_mae-beg-gmain-img-box {
+		width: 48%;
+	}
+	.pr_mae-beg-gift-main img {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.pr_mae-pre-gu-plist-item002 .pr_mae-pre-pc-img-box {
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		    align-items: center;
+	}
+}
+
+</style>
+
+<script>
+	/***kaneshiro add***/
+
+// jQuery.noConflict();
+
+(function($){
+    var page_id = 'default';
+    MAEHARA = {};
+    //common
+    MAEHARA.COMMON = {
+        init: function () {
+            page_id = $('main').attr('id');
+            // smoothscroll
+            var headerHeight = 0;
+            //SP
+            if (window.matchMedia('screen and (max-width: 768px)').matches) {
+                headerHeight = $('.header-middle').outerHeight();
+            }
+            //PC
+            else {
+                headerHeight = $('#header').outerHeight();
+            }
+            var urlHash = location.hash; //URLハッシュを取得
+            var animeSpeed = 500; //スクロールのアニメーションスピード
+            if (urlHash) {
+                $('body,html').stop().scrollTop(0);
+                setTimeout(function () {
+                    var target = $(urlHash);
+                    var position = target.offset().top - headerHeight; //ヘッダー固定の場合：headerHeight、そうでない場合：0
+                    $('body,html').stop().animate({
+                        scrollTop: position
+                    }, animeSpeed);
+                }, 100);
+            }
+            $('a[href^="#"]').on({
+                'click': function () {
+                    var href = $(this).attr("href");
+                    var target = $(href);
+                    var position = target.offset().top - headerHeight; //ヘッダー固定の場合：headerHeight、そうでない場合：0
+                    $('body,html').stop().animate({
+                        scrollTop: position
+                    }, animeSpeed);
+                    return false;
+                }
+            });
+        }
+    }
+    MAEHARA.PRESENT = {
+        init: function () {
+            //body Class add
+            $('body').addClass('pr_mae-present-page');
+            /*slider001*/
+            $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
+                auto: false,
+                infiniteLoop: false,
+                pager: false,
+                pause: 5000,
+                speed: 500,
+                slideWidth: 200,
+                slideMargin: 20,
+                controls: false,
+                captions: true,
+                mode: 'horizontal',
+                responsive: true,
+            });
+            // $('.slick-test').slick({
+            //     autoplay: false,
+            //     speed: 1000,
+            //     variableWidth: true,
+            //     centerMode: false,
+            //     centerPadding: "0",
+            //     infinite: false,
+            //     dots:true,
+            //     arrows: false,
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     autoplaySpeed: 3000,
+            //     pauseOnFocus: false,
+            //     pauseOnHover:false,
+            //     // adaptiveHeight:true,
+            //     prevArrow: '<span class="pr_atr-top-slide-arrow-prev js-pr_height-adj"></span>',
+            //     nextArrow: '<span class="pr_atr-top-slide-arrow-next js-pr_height-adj"></span>'
+            // });
+        },
+        slide: function () {
+            // $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
+            //     pager:false,
+            //     slideWidth: slide_resize,
+            // });
+        }
+    }
+    MAEHARA.BEGINER = {
+        init: function () {
+            $('body').addClass('pr_mae-beginer-page');
+            /*SP*/
+            if (window.matchMedia('screen and (max-width: 768px)').matches) {
+                $('.pr_mae-beg-base-slide001').bxSlider({
+                    auto: true,
+                    infiniteLoop: true,
+                    pager: true,
+                    pause: 5000,
+                    speed: 1500,
+                    controls: true,
+                    captions: true,
+                    mode: 'horizontal',
+                    prevText: '',
+                    nextText: '',
+                    prevSelector: '.pr_mae-beg-arrow-left',
+                    nextSelector: '.pr_mae-beg-arrow-right',
+                    responsive: true,
+                });
+            }
+            /*PC*/
+            else {
+                $('.pr_mae-beg-base-slide001').bxSlider({
+                    auto: true,
+                    infiniteLoop: true,
+                    pager: true,
+                    pause: 5000,
+                    speed: 1500,
+                    controls: true,
+                    captions: true,
+                    mode: 'horizontal',
+                    minSlides: 3,
+                    maxSlides: 3,
+                    moveSlides: 3,
+                    slideWidth: 500,
+                    prevText: '',
+                    nextText: '',
+                    prevSelector: '.pr_mae-beg-arrow-left',
+                    nextSelector: '.pr_mae-beg-arrow-right',
+                    responsive: true,
+                });
+            }
+        },
+        slide: function () {
+            // $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
+            //     slideWidth: slide_resize,
+            // });
+        }
+    }
+    var win_w = $(window).width();
+    var slide_resize = 0;
+    MAEHARA.COMMON.init();
+    $(window).on('load', function () {
+          MAEHARA.COMMON.init();
+            if (page_id === 'present') {
+          MAEHARA.PRESENT.init();
+        }
+            else if (page_id === 'beginer') {
+            MAEHARA.BEGINER.init();
+            }
+    });
+    $(window).on('resize', function () {
+        slide_resize = (win_w / 100) * 53;
+        if (page_id === 'present') {
+            MAEHARA.PRESENT.slide();
+        }
+        else if (page_id === 'beginer') {
+            slide_resize = $('.pr_mae-beg-slide-box').width() / 3;
+            MAEHARA.BEGINER.slide();
+        }
+    });
+})(jQuery);
+
+/***end***/
+</script>
 
 <!-- main start -->
 <main id="present" class="pr_mae-main">
