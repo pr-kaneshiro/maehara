@@ -15,7 +15,12 @@ jQuery(function ($) {
         });
     }
 
-    MAEHARA.ATHAND.init();
+    if (page_id === 'hand-picturebook') {
+        MAEHARA.ATHAND.init();
+    }
+    if (page_id === 'repair') {
+
+    }
 });
 
 /***end***/
