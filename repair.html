@@ -8,17 +8,15 @@
 	<!-- common -->
 	<link rel="stylesheet" href="./css/m_sys_common.css">
 	<!-- slider -->
-	<link rel="stylesheet" href="./js/jquery.bxslider.css">
-	<link rel="stylesheet" href="./js/slick.css">
-	<link rel="stylesheet" href="./js/slick_theme.css">
-	<script src="./js/jquery3.3.1.js"></script>
-	<script src="./js/jquery.bxslider.min.js"></script>
-	<script src="./js/jquery-migrate-3.0.0.min.js"></script>
-	<script src="./js/slick_slide.js"></script>
+	<script src="./js/jquery-1.11.1.min.js"></script>
 	<!-- slider end-->
 	<!-- proto add -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="./css/pr_style_002.css">
-	<script src="./js/pr_script002.js"></script>
+	<link rel="stylesheet" href="js/modaal.min.css">
+	<script src="js/modaal.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/pr_script002.js"></script>
 </head>
 <body>
 
@@ -227,79 +225,61 @@
 							</tr>
 						</table>
 
-						<!-- <div class="btn-modal parts pr_mae-repair-name-modal">
-							<a href="#modal2" class="modal btn" data-modaal-scope="modaal_15741396190643f54e8151c31b">傘のパーツ名称について</a>
+						<div class="btn-modal parts pr_mae-repair-name-modal">
+							<a href="#modal-repair" class="pr_mae-repair-name-modal-btn">傘のパーツ名称について</a>
 						</div>
 
-						<div class="modaal-wrapper modaal-inline" id="modaal_1574139764654c7f2b672af777">
-							<div class="modaal-outer-wrapper">
-								<div class="modaal-inner-wrapper">
-									<div class="modaal-container">
-										<div class="modaal-content modaal-focus" aria-hidden="false" aria-label="Dialog Window - Close (Press escape to close)" role="dialog" tabindex="0">
-											<div class="modaal-content-container" role="document">
-												<p>傘のパーツ名称</p>
-												<div class="bx-wrapper" style="max-width: 100%;">
-													<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 719px;">
-														<ul class="modal-slider" style="width: 415%; position: relative; transition-duration: 0s; transform: translate3d(-940px, 0px, 0px);">
-															<li style="float: left; list-style: none; position: relative; width: 940px;" class="bx-clone"><img src="https://gigaplus.makeshop.jp/maeharakouei/images/mae47.gif"></li>
-															<li style="float: left; list-style: none; position: relative; width: 940px;"><img src="https://gigaplus.makeshop.jp/maeharakouei/images/mae46.jpg"></li>
-															<li style="float: left; list-style: none; position: relative; width: 940px;"><img src="https://gigaplus.makeshop.jp/maeharakouei/images/mae47.gif"></li>
-															<li style="float: left; list-style: none; position: relative; width: 940px;" class="bx-clone"><img src="https://gigaplus.makeshop.jp/maeharakouei/images/mae46.jpg"></li>
-														</ul>
-													</div>
-													<div class="bx-controls bx-has-pager bx-has-controls-direction">
-														<div class="bx-pager bx-default-pager">
-															<div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div>
-															<div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div>
-														</div>
-														<div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div>
-													</div>
-												</div>
-											</div>
-										</div><button type="button" class="modaal-close" id="modaal-close" aria-label="Close (Press escape to close)"><span>Close</span></button>
-									</div>
-								</div>
-							</div>
-						</div> -->
-
-						<ul class="pr_mae-repair-indication-note-list">
-							<li>※修理部分の材質・材料によって価格が変わります。</li>
-							<li>※上記金額は税抜きです。</li>
-							<li>※修理品をご配送の場合、別途ご配送料などがかかります。</li>
-						</ul>
-
-						<span class="pr_mae-athand-book-line"></span>
-
-						<div class="pr_mae-how-sect-note-box pr_mae-repair-downloadNote">
-							<ul class="pr_mae-how-sect-list">
-								<li>
-									<p class="pr_mae-how-slist-txt">
-										修理依頼書（PDFファイル）をダウンロード・印刷しご記入の上お送りください。
-									</p>
-								</li>
-								<li>
-									<p class="pr_mae-how-slist-txt">
-										修理品をお預かり後、お見積もり・納期等の連絡が必要な場合は修理依頼書にご記入ください。
-									</p>
-								</li>
+						<div id="modal-repair" class="modal-wrap pr_mae-repair-name-modalBox">
+							<p>選択可能な手元2</p>
+							<ul class="modal-slider pr_mae-repair-name-slider">
+								<li><img src="img/maehara/hand-picturebook/kanchiku/img_detail001.png" alt=""></li>
+								<li><img src="img/maehara/hand-picturebook/kanchiku/img_detail001.png" alt=""></li>
+								<li><img src="img/maehara/hand-picturebook/kanchiku/img_detail001.png" alt=""></li>
+								<li><img src="img/maehara/hand-picturebook/kanchiku/img_detail001.png" alt=""></li>
+								<li><img src="img/maehara/hand-picturebook/kanchiku/img_detail001.png" alt=""></li>
+								<li><img src="img/maehara/hand-picturebook/kanchiku/img_detail001.png" alt=""></li>
 							</ul>
 						</div>
 
-						<a href="//maehara.co.jp/dl/repair.pdf" class="pr_mae-repair-equestForm-link" target="_blank">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="pr_mae-repair-equestForm-icon">
-								<g transform="translate(-731 -2213.681)">
-									<path d="M40.7,5.738H36.042V0H28.98V5.738H24.326l8.185,8.454Z" transform="translate(707.489 2213.681)" />
-									<rect width="18" height="2.415" transform="translate(731 2229.266)" />
-								</g>
-							</svg>
-							<span class="pr_mae-repair-equestForm-txt pr_mae-mincho">修理依頼書ダウンロード</span>
-							<span class="pr_mae-repair-equestForm-arrow"></span>
-						</a>
+						<ul class="pr_mae-repair-indication-note-list">
+							<li><span>※</span><span>修理部分の材質・材料によって価格が変わります。</span></li>
+							<li><span>※</span><span>上記金額は税抜きです。</span></li>
+							<li><span>※</span><span>修理品をご配送の場合、別途ご配送料などがかかります。</span></li>
+						</ul>
 					</div>
+					<span class="pr_mae-athand-book-line"></span>
+
+					<div class="pr_mae-how-sect-note-box pr_mae-repair-downloadNote">
+						<ul class="pr_mae-how-sect-list">
+							<li>
+								<p class="pr_mae-how-slist-txt">
+									修理依頼書（PDFファイル）をダウンロード・印刷しご記入の上お送りください。
+								</p>
+							</li>
+							<li>
+								<p class="pr_mae-how-slist-txt">
+									修理品をお預かり後、お見積もり・納期等の連絡が必要な場合は修理依頼書にご記入ください。
+								</p>
+							</li>
+						</ul>
+					</div>
+
+					<a href="//maehara.co.jp/dl/repair.pdf" class="pr_mae-repair-equestForm-link" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="pr_mae-repair-equestForm-icon">
+							<g transform="translate(-731 -2213.681)">
+								<path d="M40.7,5.738H36.042V0H28.98V5.738H24.326l8.185,8.454Z" transform="translate(707.489 2213.681)" />
+								<rect width="18" height="2.415" transform="translate(731 2229.266)" />
+							</g>
+						</svg>
+						<span class="pr_mae-repair-equestForm-txt pr_mae-mincho">修理依頼書ダウンロード</span>
+						<span class="pr_mae-repair-equestForm-arrow"></span>
+					</a>
+					<span class="pr_mae-athand-book-line"></span>
 				</div>
 			</section>
 		</section>
 	</main>
 	<!-- main end -->
+
 </body>
 </html>
