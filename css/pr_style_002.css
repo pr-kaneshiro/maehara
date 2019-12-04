@@ -78,10 +78,11 @@
 .pr_mae-athand-book-listTtl:hover {
 	cursor: pointer;
 }
-.pr_mae-athand-book-listTtl-img {
+.pr_mae-main .pr_mae-athand-book-listTtl-img {
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
 }
 .pr_mae-athand-book-listTtl-box {
 	display: flex;
@@ -720,7 +721,7 @@
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-	background: #F1EFEB;
+	background: #F6F5F2;
 	border-radius: 6px;
 }
 .pr_mae-how-sect-list {
@@ -835,7 +836,7 @@
 	width: 100%;
 	max-width: 750px;
     margin: 0 auto 26px;
-	border: solid 1px #A6A6A6;
+	border: solid 1px #ccc;
 }
 .pr_mae-repair-indication-table th,
 .pr_mae-repair-indication-table td {
@@ -1060,7 +1061,7 @@
 		width: 100%;
 		max-width: 750px;
 		margin: 0 auto 20px;
-		border: solid 1px #A6A6A6;
+		border: solid 1px #ccc;
 	}
 	.pr_mae-repair-indication-table tr + tr {
 		border-top: solid 1px #D9D8D6;
