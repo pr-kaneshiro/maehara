@@ -21,12 +21,12 @@
 	display: block !important;
 }
 /****beginner page****/
-.pr_mae-beg-base-slide001 li {
+/*.pr_mae-beg-base-slide001 li {
 	display: none;
 }
 .bx-viewport .pr_mae-beg-base-slide001 li {
 	display: block !important;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .pr_mae-beg-gmain-img-box {
@@ -143,10 +143,13 @@
                     infiniteLoop: true,
                     pager: true,
                     pause: 5000,
-                    speed: 1500,
+                    speed: 1000,
                     controls: true,
                     captions: true,
                     mode: 'horizontal',
+                    minSlides: 1,
+                    maxSlides: 1,
+                    moveSlides: 1,
                     prevText: '',
                     nextText: '',
                     prevSelector: '.pr_mae-beg-arrow-left',
@@ -187,13 +190,13 @@
     var slide_resize = 0;
     MAEHARA.COMMON.init();
     $(window).on('load', function () {
-          MAEHARA.COMMON.init();
-            if (page_id === 'present') {
+         MAEHARA.COMMON.init();
+        if (page_id === 'present') {
           MAEHARA.PRESENT.init();
         }
-            else if (page_id === 'beginer') {
-            MAEHARA.BEGINER.init();
-            }
+        else if (page_id === 'beginer') {
+        	MAEHARA.BEGINER.init();
+        }
     });
     $(window).on('resize', function () {
         slide_resize = (win_w / 100) * 53;
@@ -211,6 +214,12 @@
 
 
 </script>
+
+<style>
+	.pr_mae-beg-sel-list {
+		padding: 0;
+	}
+</style>
 
 <!-- main start -->
 <main id="beginer" class="pr_mae-main">
@@ -242,8 +251,10 @@
 			<span class="pr_mae-beg-slide-name">〈手元比較イメージ〉</span>
 			<ul class="pr_mae-beg-base-slide001 pr_mae-beg-sel-list">
 				<li>
-					<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_select-sample-slider001.png" alt="">
-					<span class="pr_mae-beg-sel-list-item-name">持ち手1</span>
+					<div>
+						<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_select-sample-slider001.png" alt="">
+						<span class="pr_mae-beg-sel-list-item-name">持ち手1</span>
+					</div>
 				</li>
 				<li>
 					<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_select-sample-slider002.png" alt="">
@@ -291,7 +302,7 @@
 						カートに商品を入れる前に、手元素材の選択メニューから忘れずにお選びください。
 					</p>
 				</div>
-				<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_note-display.png" alt="" class="pr_mae-beg-sat-main-img">
+				<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_note-display01.png" alt="" class="pr_mae-beg-sat-main-img">
 			</div>
 		</div>
 	</section>
@@ -346,7 +357,7 @@
 						名入れをご希望の方は、カートに入れる前に書体の選択と内容の記入を忘れずに行ってください。<br>名入れ可能な手元を選択しているか、ご確認ください。<br><strong>名入れありを選択すると、自動的に価格に反映されます。</strong>
 					</p>
 				</div>
-				<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_note-display.png" alt="" class="pr_mae-beg-sat-main-img">
+				<img src="https://gigaplus.makeshop.jp/maeharakouei/proto_add/img/beginer/img_note-display02.png" alt="" class="pr_mae-beg-sat-main-img">
 			</div>
 		</div>
 	</section>

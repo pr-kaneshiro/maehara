@@ -173,6 +173,8 @@
 	display: block;
 	margin-bottom: 6px;
 	font-size: 12px;
+	font-family: 游明朝, YuMincho, serif;
+	font-weight: bold;
 	color: #cc6262;
 }
 .pr_mae-pre-gu-plist-lead {
@@ -269,7 +271,7 @@ img.pr_mae-pre-sc-ttl-illast {
 }
 .pr_mae-pre-sc-ttl span {
 	position: relative;
-	z-index: 5;
+	z-index: 1;
 }
 .pr_mae-pre-sc-ttl em {
 	font-size: 14px;
@@ -480,12 +482,23 @@ a.pr_mae-pre-sc-more:hover {
 	border-radius: 6px;
 }
 .pr_mae-pre-note-ttl {
+	position: relative;
 	margin-bottom: 14px;
   padding-bottom: 10px;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-	border-bottom: 1px dotted #858382;
+}
+.pr_mae-pre-note-ttl:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, rgba(77, 77, 77, 1), rgba(77, 77, 77, 1) 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%) 0% 0%;
+	background-size: 3px 1px;
+	height: 1px;
+	bottom: 0;
 }
 .pr_mae-pre-note-main-txt {
 	font-size: 14px;
@@ -504,7 +517,7 @@ a.pr_mae-pre-sc-more:hover {
 		height: auto;
 	}
 	.pr_mae-pre-fv-ttl {
-		font-size: 30px;
+		font-size: 32px;
 	}
 	.pr_mae-pre-pc-txt-width {
 		max-width: 750px;
@@ -565,7 +578,7 @@ a.pr_mae-pre-sc-more:hover {
 	}
 	.pr_mae-pre-gu-plist-ttl {
 		margin-bottom: 42px;
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.pr_mae-pre-gu-plist-sttl {
 		margin-bottom: 9px;
@@ -851,7 +864,6 @@ a.pr_mae-pre-sc-more:hover {
 	-ms-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
 	font-size: 24px;
-	font-weight: bold;
 	color: #fff;
 }
 .pr_mae-beg-fv-txt-anker-box {
@@ -914,7 +926,6 @@ a.pr_mae-pre-sc-more:hover {
 .pr_mae-beg-sel-list {
 	width: 100%;
 	margin-bottom: 38px;
-	padding: 0 30px 34px;
 }
 .pr_mae-beg-sel-list li {
 	padding: 0 33px;
@@ -1138,13 +1149,23 @@ img.pr_mae-beg-sat-ttl002icon {
 	margin-bottom: 32px;
 }
 .pr_mae-beg-pro-note-define dt {
+	position: relative;
 	margin-bottom: 13px;
 	padding-bottom: 12px;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-	/*color: #404040;*/
-	border-bottom: 1px dotted #858382;
+}
+.pr_mae-beg-pro-note-define dt:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: linear-gradient(to right, rgba(77, 77, 77, 1), rgba(77, 77, 77, 1) 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%) 0% 0%;
+	background-size: 3px 1px;
+	height: 1px;
+	bottom: 0px;
 }
 .pr_mae-beg-pro-note-define dd {
 	font-size: 14px;
@@ -1227,7 +1248,7 @@ img.pr_mae-beg-sat-ttl002icon {
 		height: auto;
 	}
 	.pr_mae-beg-fv-txt-anker-box {
-		padding: 33px 0 45px;
+		padding: 33px 0 80px;
 	}
 	.pr_mae-beg-fv-lead {
 		max-width: 750px;
@@ -1440,7 +1461,7 @@ img.pr_mae-beg-sat-ttl002icon {
 	}
 	.pr_mae-beg-gift-main .pr_mae-beg-sect-lead {
 		margin-top: -7px;
-    margin-bottom: -2px;
+    margin-bottom: 10px;
 		text-align: left;
 	}
 	.pr_mae-beg-gmain-note {
@@ -1504,7 +1525,6 @@ img.pr_mae-beg-sat-ttl002icon {
 	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 	font-size: 24px;
-	font-weight: bold;
 	text-align: center;
 	color: #fff;
 }
@@ -1521,6 +1541,7 @@ img.pr_mae-beg-sat-ttl002icon {
 	margin-bottom: 15px;
 	font-size: 18px;
 	line-height: 1.77;
+	letter-spacing: 0.06em;
 	text-align: center;
 }
 .pr_mae-ab-pro-lead {
@@ -1633,7 +1654,8 @@ img.pr_mae-beg-sat-ttl002icon {
 	}
 	.pr_mae-ab-pro-lead {
 		font-size: 14px;
-		line-height: 2.14;
+		line-height: 2.3;
+		letter-spacing: 0.06em;
 	}
 	.pr_mae-ab-pro-lead + .pr_mae-ab-pro-lead {
 		margin-top: 23px;
@@ -1724,6 +1746,10 @@ img.pr_mae-beg-sat-ttl002icon {
 /****about page end****/
 
 /****how to use start****/
+#how-to-use.pr_mae-main {
+	margin-bottom: 0;
+	padding: 48px 20px 80px;
+}
 .pr_mae-how-first-area {
 	margin-bottom: 23px;
 }
@@ -1757,7 +1783,7 @@ img.pr_mae-beg-sat-ttl002icon {
 }
 .pr_mae-how-sect-ttl span {
 	position: relative;
-	z-index: 5;
+	z-index: 1;
 	padding: 0 8px;
 	font-size: 18px;
 	font-weight: bold;
@@ -1791,7 +1817,7 @@ img.pr_mae-beg-sat-ttl002icon {
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-	background: #F1EFEB;
+	background: #F6F5F2;
 	border-radius: 6px;
 }
 .pr_mae-how-sect-list {
@@ -1843,7 +1869,7 @@ img.pr_mae-beg-sat-ttl002icon {
 /***pc***/
 @media screen and (min-width: 768px) {
 	#how-to-use.pr_mae-main {
-		padding-top: 39px;
+		padding: 48px 70px 80px;
 	}
 	.pr_mae-how-first-area {
 		margin-bottom: 53px;
@@ -1904,9 +1930,6 @@ img.pr_mae-beg-sat-ttl002icon {
 
 /***sp***/
 @media screen and (max-width: 767px) {
-	#how-to-use.pr_mae-main {
-		padding-top: 19px;
-	}
 	.pr_mae-beg-fv-ttl-box {
 		margin-left: -20px;
 		margin-right: -20px;

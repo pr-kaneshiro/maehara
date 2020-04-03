@@ -1,4 +1,4 @@
-<!-- proto add -->
+<!--proto add -->
 <!-- slider -->
 <!-- <link rel="stylesheet" href="https://gigaplus.makeshop.jp/maeharakouei/proto_add/js/slick.css">
 <link rel="stylesheet" href="https://gigaplus.makeshop.jp/maeharakouei/proto_add/js/slick_theme.css"> -->
@@ -110,7 +110,7 @@
                 pager: false,
                 pause: 5000,
                 speed: 500,
-                slideWidth: 200,
+                slideWidth: slide_resize,
                 slideMargin: 20,
                 controls: false,
                 captions: true,
@@ -138,8 +138,7 @@
         },
         slide: function () {
             // $('.pr_mae-pre-sc-bsbox-slider').bxSlider({
-            //     pager:false,
-            //     slideWidth: slide_resize,
+            //     slideWidth: slide_resize
             // });
         }
     }
@@ -197,6 +196,7 @@
     var slide_resize = 0;
     MAEHARA.COMMON.init();
     $(window).on('load', function () {
+    		slide_resize = (win_w / 100) * 53;
           MAEHARA.COMMON.init();
             if (page_id === 'present') {
           MAEHARA.PRESENT.init();
@@ -219,6 +219,11 @@
 
 /***end***/
 </script>
+
+<!-- slider settings -->
+<style>
+	
+</style>
 
 <!-- main start -->
 <main id="present" class="pr_mae-main">
@@ -269,10 +274,7 @@
 					<p class="pr_mae-pre-gu-plist-lead">骨の数で、与える印象もかわります。</p>
 					<div class="pr_mae-pre-pc-txt-width pr_mae-pre-pc-flex-inner">
 						<p class="pr_mae-pre-gu-plist-descript">
-							骨の本数が多いことで傘を開くと円形に近くなり、華やかで安定感のあるシルエットになります。
-						</p>
-						<p class="pr_mae-pre-gu-plist-descript pr_mae-pre-gu-plist-descript-margin">
-							逆に骨が少ないとスッキリとした8角形になり、傘を閉じると細巻きになるのでスタイリッシュで華奢なシルエットになります。<br class="pr_sp-none">お好みに応じてお選びください。
+							骨の本数が多いことで傘を開くと円形に近くなり、華やかで安定感のあるシルエットになります。逆に骨が少ないとスッキリとした8角形になり、傘を閉じると細巻きになるのでスタイリッシュで華奢なシルエットになります。<br class="pr_sp-none">お好みに応じてお選びください。
 						</p>
 					</div>
 					<div class="pr_mae-pre-pc-img-box">
